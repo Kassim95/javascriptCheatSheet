@@ -36,6 +36,28 @@ function newTest(x){
 };
 //object
 var object = {color: "red", height:"6 cm"};
+
+var z = 1;
+function print_it(){   
+console.log(z); };
+
+var z = 3;
+function some_f(){   
+  var z = 20;   
+  console.log(z); 
+ } 
+ some_f(); // return 20
+ console.log(z); // return 3
+
+var c = 10;
+function hallo(){ 
+  if(true){     
+    var c = 2;
+  }   
+console.log(c);   
+// returns 2, not the global value 10   
+// implication: variables don't have a   
+// separate scope within a block }
 */
 
 function myName(x){
